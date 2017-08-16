@@ -5,16 +5,17 @@ If the function is passed a valid PIN string, return true, else return false.
 
 ### Examples:
 
-  - validatePIN("1234") === true
-  -  validatePIN("12345") === false
-  -  validatePIN("a234") === false
+```
+validatePIN("1234") === true
+validatePIN("12345") === false
+validatePIN("a234") === false
+```
 
 ### Solution
 
->function validatePIN (pin) {
->
->  var patt=new RegExp(/^\d{4}(\d{2})?$/);
->
->return patt.test(pin);
->
->}
+```js
+function validatePIN (pin) {
+  var patt=new RegExp(/^\d{4}(\d{2})?$/);
+    return patt.test(pin);
+}
+```
